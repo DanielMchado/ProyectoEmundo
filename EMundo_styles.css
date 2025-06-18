@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('img/logo_Emundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items:normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+} 
+
+:root {
+	--grey: #F1F0F6;
+	--dark-grey: #8D8D8D;
+	--light: #fff;
+	--dark: #000;
+	--green: #81D43A;
+	--light-green: #E3FFCB;
+	--blue: #1775F1;
+	--light-blue: #D0E4FF;
+	--dark-blue: #0C5FCD;
+	--red: #FC3B56;
+}
+
+html {
+	overflow-x: hidden;
+} 
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+} 
+/*menu lateral*/
+#MenuVertical{
+    position: fixed;
+	max-width: 260px;
+	width: 100%;
+	background: var(--light);
+	top: 0;
+	left: 0;
+	height: 100%;
+	overflow-y: auto;
+	scrollbar-width: none;
+	transition: all .3s ease;
+	z-index: 200;
+    background: var(--light);
+}
+
+#MenuVertical.hide {
+	max-width: 60px;
+}
+
+#MenuVertical {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#MenuVertical::-webkit-scrollbar {
+    display: none;
+}
+/*Logo inicio*/
+#MenuVertical .Logo_volver_inicio{
+    font-size: 24px;
+	display: flex;
+	align-items: center;
+	height: 64px;
+	font-weight: 700;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	transition: all .3s ease;
+	padding: 0 6px;
+    background: var(--light);
+}
+/***comienza el ul*/
+#MenuVertical .ul_MenuVertical{
+    margin: 36px 0;
+	padding: 0 20px;
+	transition: all .3s ease;
+}
+
+#MenuVertical.hide .ul_MenuVertical{
+    padding: 0 6px;
+}
+
+#MenuVertical.hide:hover .ul_MenuVertical{
+    padding: 0 20px;
+}
+
+#MenuVertical .ul_MenuVertical a {
+    display: flex;
+	align-items: center;
+	font-size: 14px;
+	padding: 12px 16px 12px 0;
+	transition: all .3s ease;
+	border-radius: 10px;
+	margin: 4px 0;
+	white-space: nowrap;
+    color: var(--dark);
+}
+/**Hay que arreglar el color***/
+#MenuVertical .ul_MenuVertical>li>a:hover{
+    background: var(--grey);
+}
+
+#MenuVertical .ul_MenuVertical > li > a.avtive{
+    transform: rotateZ(90deg);
+}
+/**Hay que arreglar el color***/
+#MenuVertical .ul_MenuVertical > li > a.active,
+#MenuVertical .ul_MenuVertical > li > a.active :hover {
+    background: var(--blue);
+	color: var(--light);
+}
+/**primer menu Hamburger**/
+#MenuVertical .divisor_MenuVertical{
+    margin-top: 24px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all .3s ease;
+	white-space: nowrap;
+    color: var(--dark-grey);
+}
+
+#MenuVertical.hide:hover .divisor_MenuVertical{
+    text-align: left;
+}
+
+#MenuVertical.hide .divisor_MenuVertical{
+    text-align: center;
+}/*****termina leyenda funciones******/
+
+/*****comienza el ul de existencia*****/
+#MenuVertical .ul_Existencias{
+    margin: 36px 0;
+	padding: 0 20px;
+	transition: all .3s ease;
+}
+
+#MenuVertical.hide .ul_Existencias{
+    padding: 0 6px;
+}
+
+#MenuVertical.hide:hover .ul_Existencias{
+    padding: 0 20px;
+}
+
+#MenuVertical .ul_Existencias a {
+    display: flex;
+	align-items: center;
+	font-size: 14px;
+	padding: 12px 16px 12px 0;
+	transition: all .3s ease;
+	border-radius: 10px;
+	margin: 4px 0;
+	white-space: nowrap;
+    color: var(--dark);
+}
+/**Hay que arreglar el color***/
+#MenuVertical .ul_Existencias>li:hover{
+    background: var(--grey);
+}
+
+#MenuVertical .ul_Existencias > li > a.avtive{
+    transform: rotateZ(90deg);
+}
+/**Hay que arreglar el color***/
+#MenuVertical .ul_Existencias > li > a.active,
+#MenuVertical .ul_Existencias > li > a.active :hover {
+    background: var(--blue);
+	color: var(--light);
+}
+
+/**Segundo menu Hamburger**/
+#MenuVertical .Ver_Libros{
+    margin-top: 24px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all .3s ease;
+	white-space: nowrap;
+    color: var(--dark-grey);
+}
+
+#MenuVertical.hide:hover .Ver_Libros{
+    text-align: left;
+}
+
+#MenuVertical.hide .Ver_Libros{
+    text-align: center;
+}/*****termina leyenda Existencia******/
+
+#MenuVertical .Ver_Existencias{
+    padding-left: 54px;
+	max-height: 0;
+	overflow-y: hidden;
+	transition: all .15s ease;
+}
+
+
+#MenuVertical .Ver_Existencias.show{
+    max-height: 1000px;
+}
+
+#MenuVertical .Ver_Existencias a:hover{
+    color: var(--blue);
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ediciones Mundo</title>
+    <link rel="stylesheet" href="EMundo_styles.css">
+</head>
+<body>
+    <!--Aqui comienza menu darta-->
+    <section id="MenuVertical">
+        <!--Titulo y volver al inicio-->
+        <a href="./Emundo_Dashboard.html" class="Logo_volver_inicio">Ediciones Mundo</a>
+        <!--Lista desordenada-->
+        <ul class="ul_MenuVertical">
+        <!--Leyenda para segmentar opciones de las operaciones del sistema-->
+        <li class="divisor_MenuVertical" data-text="FUNCIONES">Funciones</li>
+        <!--Menu entradas-->
+            <li><a href="#" class="Entradas">Registrar Entradas</a>
+            <ul>
+                <li><a href="#">Ver Entradas</a></li>
+            </ul>
+            </li>
+            <!--Menu Salidas-->
+            <li><a href="#" class="Salidas">Registrar Salidas</a>
+            <ul>
+                <li><a href="#">Ver Salidas</a></li>
+            </ul>
+            </li>
+        </ul>
+        <!--Menu existencias-->
+        <ul class="ul_Existencias">
+            <li class="Ver_Libros" data-text="Existencias">Existencias</li>
+            <li>Inventario</a>
+            <ul class="SubMenu_Existencia">
+            <li><a href="#">Libros</a></li>
+            <li><a href="#">Categorias</a></li>
+            </ul>
+            </li>
+        </ul><!---Aqui termina el menu desplegable-->
+    </section>
+    <!--Seccion de  navegacion-->
+    <section id="Navegacion">
+        <!--Menu de Navegacion-->
+        <nav>
+            <form class="nav__form" action="#">
+				<div class="div_Navegacion">
+					<input id="Buscar" type="text" placeholder="Buscar...">
+				</div>
+			</form>
+            <!--Perfile de usuario-->
+            <div class="nav__profile">
+				<img src="./img/perfil1.png" class="nav__profile-img">
+				<ul class="nav__profile-link">
+					<li><a href="#"> Perfil</a></li>
+					<li><a href="#">Configuracion</a></li>
+					<li>Cerrar Sesion</a></li>
+				</ul>
+			</div>
+            <!---cmienza el contendo principal del dashboard-->
+            <main>
+                <h1 class="Tutulo_Main">Panel Administrativo</h1> 
+                <ul class="main_ruta-nav">
+				<li><a href="#">Inicio</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Registrar Entradas</a></li>
+			    </ul>
+            </main>
+        </nav>
+    </section>
+</body>
+</html> 
